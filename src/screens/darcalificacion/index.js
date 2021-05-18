@@ -41,7 +41,7 @@ const DarCalificacionScreen = () => {
                                 //Alert.alert(responseJson)
                                 if (responseJson.success == 1) {
                                     Alert.alert(responseJson.msg)
-                                    navigation.navigate('SolicitudBS')
+                                    navigation.goBack()
                                 } else {
                                     Alert.alert(responseJson.msg)
                                 }

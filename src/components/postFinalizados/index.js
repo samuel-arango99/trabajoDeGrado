@@ -2,20 +2,9 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import styles from './styles.js';
 
-const PostSolicitud = (props) => {
+const PostFinalizado = (props) => {
 
     const post = props.post;
-    var estado = ""
-
-    if(post.state==1){
-        estado = "Pendiente de respuesta"
-    }else if(post.state==2){
-        estado = "Solicitud aprobada"
-    }else if(post.state==3){
-        estado = "Solicitud negada"
-    }else{
-        estado = "Solicitud finalizada"
-    }
 
     if(post.category == "Bien"){
         var image = require('../../../assets/images/bien.png');
@@ -32,13 +21,11 @@ const PostSolicitud = (props) => {
             </Text>
             <Text style={styles.precio}>Categoría: {post.category}</Text>
             <Text style={styles.precio}>Precio: ${post.price}</Text>
-            <Text style={styles.precio}>Solicitante: {post.requestUser}</Text>
+            <Text style={styles.precio}>Prestador: {post.username}</Text>
             <Text style={styles.precio}>Correo: {post.email}</Text>
             <Text style={styles.precio}>Teléfono: {post.phone}</Text>
-            <Text style={styles.precio}>Calificación: {post.calification}</Text>
-            <Text style={styles.precio}>Estado: {estado}</Text>
         </View>
     );
 };
 
-export default PostSolicitud;
+export default PostFinalizado;

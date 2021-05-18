@@ -5,8 +5,9 @@ import TarjetasScreen from '../screens/Tarjetas';
 import AddTarjetasScreen from '../screens/addTarjeta';
 import CambiarDatosTarjetaScreen from '../screens/cambiardatosTC';
 import NotificacionesScreen from '../screens/notificacion';
-import DarCalificacionScreen from '../screens/darcalificacion';
+import SolicitudesRecibidasScreen from '../screens/solicitudesRecibidas'
 import CambiarDatosUsuarioScreen from '../screens/cambiardatosUSUARIO';
+import DarCalificacionScreen from '../screens/darcalificacion'
 
 
 
@@ -65,6 +66,22 @@ const Router = () =>{
                     component={CambiarDatosUsuarioScreen}
                     options={{
                         title:'Realice los cambios que desee',
+                    }}
+            >
+            </Stack.Screen>
+
+            <Stack.Screen name={"solicitudesFinalizadas"} 
+                    component={SolicitudesRecibidasScreen}
+                    options={{
+                        title:'Historial de solicitudes finalizadas',
+                    }}
+            >
+            </Stack.Screen>
+
+            <Stack.Screen name={"CalificarUsuario"} 
+                    component={DarCalificacionScreen}
+                    options={{
+                        title:'Ingrese la calificación',
                     }}
             >
             </Stack.Screen>

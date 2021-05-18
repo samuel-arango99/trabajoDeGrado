@@ -37,37 +37,6 @@ const Router = () =>{
                         headerShown:false,
                     }}>
                 </Stack.Screen>
-
-                {/*
-
-                <Stack.Screen name={"Search Place"}
-                    component={SearchPlaceScreen}
-                    options={{
-                        title: "Buscar bien/servicio"
-                    }}>
-                </Stack.Screen>
-                
-                <Stack.Screen name={"Filtros"}
-                    component={SearchFilterScreen}
-                    options={{
-                        title: "Filtrar busqueda"
-                    }}>
-                </Stack.Screen>
-                */}
-
-
-                {/*
-                
-                
-
-                <Stack.Screen name={"Tarjetas"}
-                    component={TarjetasScreen}
-                    options={{
-                        title: "Tarjetas de credito"
-                    }}>
-                </Stack.Screen>
-                */}
-                
             </Stack.Navigator>
         </NavigationContainer>
     );

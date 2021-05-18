@@ -123,6 +123,11 @@ const PerfilScreen = () => {
                 </Pressable>
             </View>
             <View style={styles.row}>
+                <Pressable onPress={() => navigation.navigate('solicitudesFinalizadas')}>
+                    <Text style={styles.datos}>Historial de solicitudes finalizadas</Text>
+                </Pressable>
+            </View>
+            <View style={styles.row}>
                 <Pressable onPress={EliminarCuentaAlert}>
                     <Text style={styles.datos}>Eliminar cuenta</Text>
                 </Pressable>
